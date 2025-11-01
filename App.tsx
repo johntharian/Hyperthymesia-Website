@@ -6,12 +6,14 @@ import FeaturesPage from './pages/FeaturesPage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import UseCasesPage from './pages/UseCasesPage';
 import RoadmapPage from './pages/RoadmapPage';
+import OurStoryPage from './pages/OurStoryPage';
 
 const routes: { [key: string]: React.FC } = {
   '#/features': FeaturesPage,
   '#/how-it-works': HowItWorksPage,
   '#/use-cases': UseCasesPage,
   '#/roadmap': RoadmapPage,
+  '#/our-story': OurStoryPage,
 };
 
 const App: React.FC = () => {
