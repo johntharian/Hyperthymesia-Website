@@ -1,8 +1,5 @@
 import React from 'react';
-import { TrendingUpIcon } from './icons/TrendingUpIcon';
-import { DevicePhoneIcon } from './icons/DevicePhoneIcon';
-import { ShieldCheckIcon } from './icons/ShieldCheckIcon';
-import { ZapIcon } from './icons/ZapIcon';
+import { TrendingUp, Smartphone, ShieldCheck, Zap } from 'lucide-react';
 
 const WhyNow: React.FC = () => {
   return (
@@ -103,28 +100,28 @@ const WhyNow: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-6">What This Means for Developers</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex items-start">
-                  <ZapIcon className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
+                  <Zap className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-white mb-2">Search Like Never Before</p>
                     <p className="text-gray-400 text-sm">Search your codebase as much as you want without API costs or rate limits. Ask complex questions instantly.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <ShieldCheckIcon className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
+                  <ShieldCheck className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-white mb-2">Keep Your Code Private</p>
                     <p className="text-gray-400 text-sm">Proprietary code stays on your machine. No upload to cloud, no privacy concerns, no compliance issues.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <DevicePhoneIcon className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
+                  <Smartphone className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-white mb-2">Hardware You Already Have</p>
                     <p className="text-gray-400 text-sm">Your laptop has more compute power than ever. Use it for your benefit, not for cloud vendors' profits.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <TrendingUpIcon className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
+                  <TrendingUp className="w-8 h-8 text-brand-blue mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-white mb-2">The Trend is Unstoppable</p>
                     <p className="text-gray-400 text-sm">Hardware keeps getting better, models keep getting smaller and faster. On-device AI is the future.</p>

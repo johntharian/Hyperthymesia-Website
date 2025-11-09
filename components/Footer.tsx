@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GithubIcon } from './icons/GithubIcon';
+import { Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex items-center space-x-4">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">
-                <GithubIcon className="w-6 h-6" />
+                <Github className="w-6 h-6" />
             </a>
             <a href="#documentation" className="text-sm text-gray-500 hover:text-white transition-colors">Docs</a>
             <a href="#community" className="text-sm text-gray-500 hover:text-white transition-colors">Community</a>

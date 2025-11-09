@@ -1,8 +1,6 @@
 
 import React from 'react';
-import { CheckCircleIcon } from './icons/CheckCircleIcon';
-import { WrenchScrewdriverIcon } from './icons/WrenchScrewdriverIcon';
-import { RocketLaunchIcon } from './icons/RocketLaunchIcon';
+import { CheckCircle, Wrench, Rocket } from 'lucide-react';
 
 interface RoadmapItem {
   phase: string;
@@ -72,9 +70,9 @@ const roadmapData: RoadmapItem[] = [
 ];
 
 const StatusIcon: React.FC<{ status: 'Completed' | 'In Progress' | 'Planned' }> = ({ status }) => {
-  if (status === 'Completed') return <CheckCircleIcon className="w-6 h-6 text-green-500" />;
-  if (status === 'In Progress') return <WrenchScrewdriverIcon className="w-6 h-6 text-yellow-500 animate-pulse" />;
-  return <RocketLaunchIcon className="w-6 h-6 text-gray-500" />;
+  if (status === 'Completed') return <CheckCircle className="w-6 h-6 text-green-500" />;
+  if (status === 'In Progress') return <Wrench className="w-6 h-6 text-yellow-500 animate-pulse" />;
+  return <Rocket className="w-6 h-6 text-gray-500" />;
 };
 
 const Roadmap: React.FC = () => {

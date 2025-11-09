@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
-import { ClipboardIcon } from './icons/ClipboardIcon';
-import { CheckIcon } from './icons/CheckIcon';
+import { Copy, Check } from 'lucide-react';
 
 interface CodeBlockProps {
   code: string;
@@ -26,9 +25,9 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, language }) => {
         aria-label="Copy to clipboard"
       >
         {copied ? (
-          <CheckIcon className="w-5 h-5 text-green-400" />
+          <Check className="w-5 h-5 text-green-400" />
         ) : (
-          <ClipboardIcon className="w-5 h-5 text-gray-400" />
+          <Copy className="w-5 h-5 text-gray-400" />
         )}
       </button>
       <pre className="p-4 text-sm overflow-x-auto">

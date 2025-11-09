@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GithubIcon } from './icons/GithubIcon';
+import { Github } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <a href="https://github.com/johntharian/Hyperthymesia" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center justify-center w-9 h-9 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors">
-            <GithubIcon className="w-5 h-5 text-white" />
+            <Github className="w-5 h-5 text-white" />
           </a>
         </div>
       </div>

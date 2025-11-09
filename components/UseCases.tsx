@@ -1,10 +1,6 @@
 
 import React from 'react';
-import { UserPlusIcon } from './icons/UserPlusIcon';
-import { MagnifyingGlassIcon } from './icons/MagnifyingGlassIcon';
-import { PuzzlePieceIcon } from './icons/PuzzlePieceIcon';
-import { BookOpenIcon } from './icons/BookOpenIcon';
-import { WrenchScrewdriverIcon } from './icons/WrenchScrewdriverIcon';
+import { UserPlus, Search, Puzzle, BookOpen, Wrench } from 'lucide-react';
 
 interface UseCase {
   icon: React.ReactNode;
@@ -16,35 +12,35 @@ interface UseCase {
 
 const useCases: UseCase[] = [
   {
-    icon: <UserPlusIcon className="w-7 h-7 text-gray-300" />,
+    icon: <UserPlus className="w-7 h-7 text-gray-300" />,
     title: 'Onboarding',
     description: "Understand a 100k LOC codebase in hours, not weeks. New team members can get up to speed faster and independently, reducing pressure on experienced developers.",
     query: 'What is the authentication flow?',
     timeSaved: '~20-40 hours per new developer'
   },
   {
-    icon: <MagnifyingGlassIcon className="w-7 h-7 text-gray-300" />,
+    icon: <Search className="w-7 h-7 text-gray-300" />,
     title: 'Code Exploration',
     description: 'Find where specific logic is implemented and understand the patterns used across the entire codebase without manual code review.',
     query: 'Where is the retry mechanism implemented?',
     timeSaved: '~3-5 hours per week'
   },
   {
-    icon: <PuzzlePieceIcon className="w-7 h-7 text-gray-300" />,
+    icon: <Puzzle className="w-7 h-7 text-gray-300" />,
     title: 'Architecture Understanding',
     description: 'Grasp high-level concepts and complex systems like distributed transactions with detailed, code-grounded explanations. Supports codebases up to 1M+ lines.',
     query: 'How does the system handle distributed transactions?',
     timeSaved: '~5-10 hours per project'
   },
   {
-    icon: <BookOpenIcon className="w-7 h-7 text-gray-300" />,
+    icon: <BookOpen className="w-7 h-7 text-gray-300" />,
     title: 'Learning Patterns',
     description: 'Learn best practices and design decisions from your own code by asking how features like caching are built. Build institutional knowledge.',
     query: 'How does caching work in this project?',
     timeSaved: '~2-3 hours per pattern'
   },
   {
-    icon: <WrenchScrewdriverIcon className="w-7 h-7 text-gray-300" />,
+    icon: <Wrench className="w-7 h-7 text-gray-300" />,
     title: 'Legacy Code Maintenance',
     description: 'Understand old modules and make safe changes without breaking functionality. Ask questions about how systems interact and depend on each other.',
     query: 'What depends on this authentication module?',

@@ -1,10 +1,6 @@
 
 import React from 'react';
-import { ShieldCheckIcon } from './icons/ShieldCheckIcon';
-import { WifiOffIcon } from './icons/WifiOffIcon';
-import { ZapIcon } from './icons/ZapIcon';
-import { CpuChipIcon } from './icons/CpuChipIcon';
-import { CheckIcon } from './icons/CheckIcon';
+import { ShieldCheck, WifiOff, Zap, Cpu, Check } from 'lucide-react';
 
 interface Feature {
   icon: React.ReactNode;
@@ -14,27 +10,27 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    icon: <ShieldCheckIcon className="w-8 h-8 text-brand-blue" />,
+    icon: <ShieldCheck className="w-8 h-8 text-brand-blue" />,
     title: '100% Private',
     description: 'Your code is sensitive. Hyperthymesia processes everything on your machine. Nothing ever leaves your computer.',
   },
   {
-    icon: <WifiOffIcon className="w-8 h-8 text-brand-blue" />,
+    icon: <WifiOff className="w-8 h-8 text-brand-blue" />,
     title: 'Works Offline',
     description: 'No internet connection? No problem. After the initial setup, you get full functionality, anytime, anywhere.',
   },
   {
-    icon: <ZapIcon className="w-8 h-8 text-brand-blue" />,
+    icon: <Zap className="w-8 h-8 text-brand-blue" />,
     title: 'Blazing Fast',
     description: "By eliminating network latency, you get instant responses for simple queries and complex analysis in seconds.",
   },
   {
-    icon: <CheckIcon className="w-8 h-8 text-brand-blue" />,
+    icon: <Check className="w-8 h-8 text-brand-blue" />,
     title: 'No Subscription',
     description: 'One-time setup, no recurring costs. No API bills. No rate limits. Use Hyperthymesia as much as you want.',
   },
   {
-    icon: <CpuChipIcon className="w-8 h-8 text-brand-blue" />,
+    icon: <Cpu className="w-8 h-8 text-brand-blue" />,
     title: 'Multi-Backend',
     description: "You're in control. Use Ollama, llama-cpp, or MLX on Apple Silicon. Bring your own model, your own prompts.",
   },
