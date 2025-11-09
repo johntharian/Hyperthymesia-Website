@@ -1,10 +1,13 @@
 
 import React from 'react';
-import CodeBlock from './CodeBlock';
 
 const Hero: React.FC = () => {
-  const installCommand = `brew tap johntharian/hyperthymesia
-brew install hyperthymesia`;
+  const handleGetStarted = () => {
+    const waitlistSection = document.getElementById('waitlist-section');
+    if (waitlistSection) {
+      waitlistSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="py-20 md:py-32 text-center">
@@ -17,9 +20,12 @@ brew install hyperthymesia`;
         <br />
         <span className="font-semibold text-gray-200">No cloud. No subscriptions. No privacy concerns.</span>
       </p>
-      <div className="max-w-md mx-auto">
-        <CodeBlock code={installCommand} language="bash" />
-      </div>
+      <button
+        onClick={handleGetStarted}
+        className="px-8 py-3 bg-gradient-to-r from-brand-blue to-brand-purple text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-brand-blue/50 transition-all duration-200"
+      >
+        Interested in Getting Started?
+      </button>
     </section>
   );
 };

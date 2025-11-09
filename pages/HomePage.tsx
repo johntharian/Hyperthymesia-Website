@@ -7,6 +7,7 @@ import UseCases from '../components/UseCases';
 import Installation from '../components/Installation';
 import ComparisonTable from '../components/ComparisonTable';
 import Roadmap from '../components/Roadmap';
+import Waitlist from '../components/Waitlist';
 
 const HomePage: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
       <WhyNow />
       <UseCases />
       <Installation />
+      <Waitlist />
       <ComparisonTable />
       <Roadmap />
     </>
